@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         //declaring views
         var edt_txt : EditText = findViewById(R.id.editText)
         var btn : Button = findViewById(R.id.button)
+        var preUser = findViewById<Button>(R.id.historyBtn)
 
         //getting value from text box
 
@@ -30,6 +31,15 @@ class MainActivity : AppCompatActivity() {
                 //passing data between activities"
 //                i.putExtra("name", name)
                 startActivity(i)
+        }
+
+        //precious user button
+        preUser.setOnClickListener(){
+            var i: Intent = Intent(
+                this,
+                HelloActivity::class.java
+            )
+            startActivity(i)
         }
 
 
