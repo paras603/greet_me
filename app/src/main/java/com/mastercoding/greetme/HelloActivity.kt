@@ -12,12 +12,6 @@ class HelloActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello)
 
-
-
-//        var bundle : Bundle? = intent.extras
-//
-//        val name = bundle?.getString("name")
-
         val resultTxt : TextView = findViewById(R.id.textView)
 
         val userName = displaySavedName()

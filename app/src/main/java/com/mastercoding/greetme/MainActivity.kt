@@ -17,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         var btn : Button = findViewById(R.id.button)
         var preUser = findViewById<Button>(R.id.historyBtn)
 
-        //getting value from text box
-
-
         //button function
         btn.setOnClickListener(){
             var name : String = edt_txt.text.toString()
@@ -28,8 +25,6 @@ class MainActivity : AppCompatActivity() {
 
             //explict intents
             var i : Intent  = Intent(this, HelloActivity::class.java)
-                //passing data between activities"
-//                i.putExtra("name", name)
                 startActivity(i)
         }
 
@@ -41,8 +36,6 @@ class MainActivity : AppCompatActivity() {
             )
             startActivity(i)
         }
-
-
     }
 
     private fun SaveNameInSharedPref(enteredText: String) {
